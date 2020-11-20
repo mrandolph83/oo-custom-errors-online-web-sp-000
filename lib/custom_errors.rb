@@ -13,9 +13,10 @@ class Person
   # Raise method allows you to navigate
   # to a custom error message when certain
   # parameters are met or not met
-      raise PartnerError
-    rescue PartnerError => error
-      puts error.message
+        raise PartnerError
+      rescue PartnerError => error
+        puts error.message
+      end
     else
       person.partner = self
     end
